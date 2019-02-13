@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><CENTER>CRONOMETRO</CENTER></title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<center>
+		<div id="contenedor">
+			<div class="reloj" id="Horas">00</div>
+			<div class="reloj" id="Minutos">:00</div>
+			<div class="reloj" id="Segundos">:00</div>
+			<div class="reloj" id="Centesimas">:00</div>
+		</div>
+		<div>
+			<input type="button" class="boton" id="inicio" value="Start &#9658;" onclick="inicio();">
+			<input type="button" class="boton" id="parar" value="Stop &#8718;" onclick="parar();" disabled>
+			<input type="button" class="boton" id="continuar" value="Resume &#8634;" onclick="inicio();" disabled>
+			<input type="button" class="boton" id="reinicio" value="Reset &#8635;" onclick="reinicio();" disabled>
+			<input type="button" class="boton" id="exportar" value="Exportar &#9636;" onclick="exportar();">
+		</div>
+	</center>
+	<br>
+	<br>
+	<div id="cabezal"><strong>Tiempos</strong></div>
+	<div class="row">
+		<div class="column sub">
+			<div>
+				<input type="button" class="boton" id="lapA" value="LAP A" onclick="lapA();">
+			</div>
+			<div>
+				<ol id="laps">
+					<div class="row">
+						<div class="column min" id="indexA">#</div>
+						<div class="column min" id="horaA">Hora</div>
+						<div class="column min" id="vueltaA">Lap</div>
+					</div>
+				</ol>
+			</div>
+		</div>
+		<div class="column sub">
+			<div>
+				<input type="button" class="boton" id="lapB" value="LAP B" onclick="lapB();">
+			</div>
+			<div>
+				<ol id="laps">
+					<div class="row">
+						<div class="column min" id="indexB">#</div>
+						<div class="column min" id="horaB">Hora</div>
+						<div class="column min" id="vueltaB">Lap</div>
+					</div>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
