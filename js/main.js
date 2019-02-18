@@ -39,6 +39,7 @@ function reinicio () {
 	document.getElementById("reinicio").disabled = true;
 	document.getElementById("lapA").disabled = true;
 	document.getElementById("lapB").disabled = true;
+	location.reload();
 }
 function exportar () {
 	var fso = CreateObject("Scripting.FileSystemObject");  
